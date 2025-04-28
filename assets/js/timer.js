@@ -1,6 +1,6 @@
 // timer.js
 
-let timeLeft = 120; // 2 minutes
+let timeLeft = 90; // 2 minutes
 let timerInterval;
 let spawnInterval;
 let spawnSpeed = 1000; // start with 1 second
@@ -16,7 +16,7 @@ function updateTimer() {
   timerElement.textContent = timeLeft;
 
   // Every 20 seconds, increase speed
-  if (timeLeft % 10 === 0 && timeLeft !== 120 && timeLeft > 0) {
+  if (timeLeft % 10 === 0 && timeLeft !== 90 && timeLeft > 0) {
     increaseSpawnSpeed();
   }
 

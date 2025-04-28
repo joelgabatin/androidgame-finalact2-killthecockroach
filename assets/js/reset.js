@@ -27,7 +27,7 @@ function resetGame() {
   scoreElement.textContent = score;
 
   // Reset timer
-  timeLeft = 120;
+  timeLeft = 90;
   timerElement.textContent = timeLeft;
 
   // Clear cockroaches

@@ -1,16 +1,16 @@
+
 body {
   background: linear-gradient(to bottom, #eafaf1, #d4f5e3);
-  cursor: url('assets/img/slipper-cursor.png'), auto;
-  
+  cursor: url('assets/img/slipper-cursor.png') 50 50, auto; /* KEEP THIS */
 }
 
 
 #gameArea {
   background: url('assets/img/floor-pattern.png') repeat; /* Optional: add a light background pattern */
-  cursor: url('assets/img/slipper-cursor.png') 50 50, auto;
+  cursor: url('assets/img/slipper-cursor.png') 50 50, auto; /* KEEP THIS */
   background-size: cover;
   position: relative;
-  cursor: url('assets/img/slipper-cursor.png') 50 50, auto; /* KEEP THIS */
+
 }
 
 

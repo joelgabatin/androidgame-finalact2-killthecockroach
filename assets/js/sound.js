@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
       backgroundMusic.play();
     }, { once: true });
   });
+
+  spawnCockroach();
 });
 
 // Function to play squish sound
