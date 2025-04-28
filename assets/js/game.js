@@ -32,6 +32,9 @@ function startGame() {
 }
 
 function spawnCockroach() {
+  if (!isOnline) return; // 🚫 Don't spawn if offline
+
+
   const cockroach = document.createElement('div');
   cockroach.classList.add('cockroach');
   const maxX = gameArea.clientWidth - 75;
