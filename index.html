@@ -16,7 +16,7 @@
   <title>Kill the Cockroaches!</title>
 </head>
 
-<body class="text-center p-3">
+<body class="text-center p-2">
 
   <!-- Start Screen Overlay -->
   <!-- Start Screen Overlay -->
@@ -47,13 +47,13 @@
 
 
 
-  <div class="row">
+  <div class="row align-items-center position-relative">
     <div class="col-8">
       <h4 class="text-center" style="font-size: 2.0rem;">Kill the Cockroaches!</h4>
     </div>
     <div class="col-4 text-end">
-      <p class="mb-0"><span class="timer">120 </span> sec :Timer </p>
-      <p class="mb-0"><span id="score">0</span> :Kills</p>    
+      <p class="mb-0"><span id="timer">120 </span> sec </p>
+      <p class="mb-0"><span id="score">0</span> kills</p>    
       <div class="mutebutton">
         <!-- Mute Button -->
         <button id="muteBtn" class="btn btn-secondary end-0 my-3">
@@ -61,17 +61,15 @@
         </button>
       </div>
     </div>
-  </div>
-  <div class="row">
+      <!-- Cockroaches will appear here -->
+      <div id="speedUpNotification" class="speed-up hidden">
+        ⚡ Speed Up!
+      </div>
   </div>
 
-  <div id="gameArea" class="position-relative bg-light rounded border" style="width: 100%; height: 75vh; margin: auto; overflow: hidden;">
-
+  <div id="gameArea" class="bg-light rounded border" style="width: 100%; height: 70vh; margin: auto; overflow: hidden;">
+    
   </div>
-    <!-- Cockroaches will appear here -->
-    <div id="speedUpNotification" class="speed-up hidden">
-      ⚡ Speed Up!
-    </div>
 
 
   <!-- Install Button -->
