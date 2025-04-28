@@ -65,21 +65,19 @@ body {
 /* Speed Up Notification */
 .speed-up {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: yellow;
+  top: 0;
+  right: 0;
+  /* transform: translate(-50%, -50%); */
+  background-color: rgba(255, 255, 0, 0.5); /* ✅ Yellow with 50% opacity */
   color: black;
   font-size: 1.0rem;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 10px;
-  opacity: 1;
   transition: opacity 0.5s ease;
   z-index: 9999;
   width: 150px !important;
-  text-align: center;
-  
+  text-align: center; 
 }
 
 /* Show notification */

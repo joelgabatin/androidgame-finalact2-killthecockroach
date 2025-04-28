@@ -16,7 +16,7 @@
   <title>Kill the Cockroaches!</title>
 </head>
 
-<body class="text-center p-2">
+<body class="text-center">
 
   <!-- Start Screen Overlay -->
   <!-- Start Screen Overlay -->
@@ -27,25 +27,23 @@
       <i class="fas fa-play"></i> Start Game
     </button>
   </div> -->
+<div class="container">
+  <!-- Start Screen -->
+  <div id="startScreen" class="start-screen">
+    <p class="start-title">Are you ready to kill the Cockroaches!</p>
+    <button id="startBtn" class="start-btn">
+      <i class="fas fa-play"></i> Start Game
+    </button>
+  </div>
 
-<!-- Start Screen -->
-<div id="startScreen" class="start-screen">
-  <p class="start-title">Are you ready to kill the Cockroaches!</p>
-  <button id="startBtn" class="start-btn">
-    <i class="fas fa-play"></i> Start Game
-  </button>
-</div>
-
-<!-- Game Over Screen -->
-<div id="gameOverScreen" class="gameover-screen hidden">
-  <h3 class="gameover-title">Times Up!</h1>
-  <p class="gameover-score">Cockroaches Killed: <span id="finalScore">0</span></p>
-  <button id="playAgainBtn" class="playagain-btn">
-    <i class="fas fa-redo"></i> Play Again
-  </button>
-</div>
-
-
+  <!-- Game Over Screen -->
+  <div id="gameOverScreen" class="gameover-screen hidden">
+    <h3 class="gameover-title">Times Up!</h1>
+    <p class="gameover-score">Cockroaches Killed: <span id="finalScore">0</span></p>
+    <button id="playAgainBtn" class="playagain-btn">
+      <i class="fas fa-redo"></i> Play Again
+    </button>
+  </div>
 
   <div class="row align-items-center position-relative">
     <div class="col-8">
@@ -61,22 +59,26 @@
         </button>
       </div>
     </div>
-      <!-- Cockroaches will appear here -->
-      <div id="speedUpNotification" class="speed-up hidden">
-        ⚡ Speed Up!
-      </div>
+    <!-- Cockroaches will appear here -->
+    <div id="speedUpNotification" class="speed-up hidden text-center">
+      ⚡Speed Up!
+    </div>
+
   </div>
 
   <div id="gameArea" class="bg-light rounded border" style="width: 100%; height: 70vh; margin: auto; overflow: hidden;">
-    
+
   </div>
 
-
+  <div class="description my-2" style="font-size: .7rem;">
+    <p class="m-0">In 2 minutes kill Cockroaches as you can. Enjoy Killing!</p>
+  </div>
   <!-- Install Button -->
-  <button id="installBtn" hidden class="btn btn-success position-fixed bottom-0 start-50 translate-middle-x mb-3">
+  <button id="installBtn" hidden class="btn btn-success position-fixed bottom-0 start-50 translate-middle-x ">
     <i class="fas fa-download"></i> Install Game
   </button>
-
+  
+</div>
  
   <!-- Scripts -->   
   <script src="assets/js/service-worker.js"></script>
