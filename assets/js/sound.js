@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to play squish sound
 function playSquishSound() {
-  squishSound.currentTime = 0;
-  squishSound.play();
+
+
+  if (isMuted) {
+  } else {
+    squishSound.currentTime = 0;
+    squishSound.play();
+  }
 }

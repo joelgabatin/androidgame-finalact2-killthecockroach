@@ -3,12 +3,6 @@ document.getElementById('muteBtn').addEventListener('click', toggleMute);
 
 let isMuted = false;
 
-// Play background music after first click
-document.addEventListener('click', () => {
-  if (backgroundMusic.paused && !isMuted) {
-    backgroundMusic.play();
-  }
-}, { once: true });
 
 // Mute/Unmute function
 function toggleMute() {
@@ -16,8 +10,10 @@ function toggleMute() {
   
   if (isMuted) {
     backgroundMusic.pause();
+    squishSound.pause();
   } else {
     backgroundMusic.play();
+    squishSound.play();
   }
   
   updateMuteButtonIcon();
