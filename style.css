@@ -193,17 +193,19 @@ body {
 }
 
 
-/* Offline Notification */
-.offline-notification {
+.offline-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: red;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark background */
   color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
   z-index: 9999;
 }
 

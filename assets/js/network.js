@@ -1,15 +1,16 @@
 // network.js
+// network.js
 
-const offlineNotification = document.getElementById('offlineNotification');
-let isOnline = true; // New flag to control gameplay
+const offlineScreen = document.getElementById('offlineScreen');
 
-// Function to check network status
+let isOnline = true; // control gameplay
+
 function updateOnlineStatus() {
   if (navigator.onLine) {
-    offlineNotification.classList.add('hidden');
-    isOnline = true;z``
+    offlineScreen.classList.add('hidden');
+    isOnline = true;
   } else {
-    offlineNotification.classList.remove('hidden');
+    offlineScreen.classList.remove('hidden');
     isOnline = false;
   }
 
@@ -20,9 +21,9 @@ function updateOnlineStatus() {
   }
 }
 
-// Listen for connection changes
+// Listen for connection changes -> check if their is internet connection
 window.addEventListener('offline', updateOnlineStatus);
 window.addEventListener('online', updateOnlineStatus);
 
-// Check status immediately after page load
+// Check immediately after load
 window.addEventListener('load', updateOnlineStatus);
