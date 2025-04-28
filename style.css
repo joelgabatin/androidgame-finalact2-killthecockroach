@@ -112,7 +112,7 @@ body {
 
 .start-btn {
   padding: 12px 24px;
-  font-size: 1.0rem;
+  font-size: .8rem;
   background-color: #28a745;
   border: none;
   border-radius: 10px;
@@ -153,7 +153,7 @@ body {
 
 .playagain-btn {
   padding: 12px 24px;
-  font-size: 1.0rem;
+  font-size: .8rem;
   background-color: #28a745;
   border: none;
   border-radius: 10px;
@@ -165,6 +165,23 @@ body {
 .playagain-btn:hover {
   background-color:#218838;
 }
+
+.viewleaderboardBtn {
+  padding: 12px 24px;
+  font-size: .8rem;
+  background-color: #0265f9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.viewleaderboardBtn:hover {
+  background-color: #0d6dfd60;
+}
+
 
 /* Hidden utility class */
 .hidden {

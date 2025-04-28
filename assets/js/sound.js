@@ -8,12 +8,15 @@ const backgroundMusic = new Audio('assets/sounds/background-music.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.5; // 50% volume
 
-// Play background music on first click
-document.addEventListener('click', () => {
-  if (backgroundMusic.paused) {
-    backgroundMusic.play();
-  }
-}, { once: true });
+// Try to play background music immediately
+document.addEventListener('DOMContentLoaded', () => {
+  backgroundMusic.play().catch(() => {
+    // If autoplay is blocked, wait for first user click
+    document.addEventListener('click', () => {
+      backgroundMusic.play();
+    }, { once: true });
+  });
+});
 
 // Function to play squish sound
 function playSquishSound() {

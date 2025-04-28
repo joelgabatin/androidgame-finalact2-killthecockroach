@@ -1,6 +1,6 @@
 {
-  "name": "Tap the Cockroaches",
-  "short_name": "TapRoach",
+  "name": "Kill Cockroaches Game",
+  "short_name": "KillRoaches",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#eafaf1",
