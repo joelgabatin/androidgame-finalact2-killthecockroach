@@ -34,8 +34,8 @@ function startGame() {
 function spawnCockroach() {
   const cockroach = document.createElement('div');
   cockroach.classList.add('cockroach');
-  const maxX = gameArea.clientWidth - 150;
-  const maxY = gameArea.clientHeight - 150;
+  const maxX = gameArea.clientWidth - 75;
+  const maxY = gameArea.clientHeight - 75;
   const x = Math.random() * maxX;
   const y = Math.random() * maxY;
 
