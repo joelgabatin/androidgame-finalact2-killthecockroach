@@ -1,7 +1,10 @@
 window.onload = function() {
   
   document.getElementById('muteBtn').addEventListener('click', toggleMute);
-
+  document.getElementById('playAgainBtn').addEventListener('click', () => {
+    startGame();
+  });
+  
   // Start Screen logic
   const startBtn = document.getElementById('startBtn');
   const startScreen = document.getElementById('startScreen');
@@ -15,14 +18,17 @@ window.onload = function() {
 };
 
 
+
 let score = 0;
 const scoreElement = document.getElementById('score');
 const gameArea = document.getElementById('gameArea');
-let spawnInterval; // control spawning
+
 
 function startGame() {
-  // Spawn every second
-  setInterval(spawnCockroach, 1000);
+  console.log("enters startgame");
+  const interval = setInterval(spawnCockroach, 1000); // spawn cockroaches
+  setSpawnInterval(interval); // ⬅️ tell timer.js about it
+  startTimer();               // ⬅️ start countdown timer
 }
 
 function spawnCockroach() {
