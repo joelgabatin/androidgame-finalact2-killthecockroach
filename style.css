@@ -62,13 +62,11 @@ body {
   z-index: 9999;
 }
 
-/* Speed Up Notification */
 .speed-up {
   position: absolute;
-  top: 0;
-  right: 0;
-  /* transform: translate(-50%, -50%); */
-  background-color: rgba(255, 255, 0, 0.5); /* ✅ Yellow with 50% opacity */
+  top: calc(50% - 50px); /* Half of the element's height */
+  left: calc(50% - 75px); /* Half of the element's width */
+  background-color: rgba(255, 255, 0, 0.5);
   color: black;
   font-size: 1.0rem;
   font-weight: bold;
@@ -76,9 +74,10 @@ body {
   border-radius: 10px;
   transition: opacity 0.5s ease;
   z-index: 9999;
-  width: 150px !important;
-  text-align: center; 
+  width: 150px;
+  text-align: center;
 }
+
 
 /* Show notification */
 .show-speed {
